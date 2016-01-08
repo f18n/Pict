@@ -14,6 +14,12 @@ import javax.microedition.lcdui.*;
  *
  * @author  f18n
  * @version  0.0.1
+ * 
+ * 
+ *  the problem
+ *     I not not know how this app make donwload picture online.
+ *     this example I make situation Offline
+ * 
  */
 public class PictMain extends MIDlet implements CommandListener{
     
@@ -83,7 +89,7 @@ public class PictMain extends MIDlet implements CommandListener{
             form.append(it);
             dis.setCurrent(form);
         }else if(c == down){
-			//command donwload
+            //command donwload
             gg = new Gauge("Download...",false,100,0);
             new Thread(new Download()).start();
             batal = new Command("Batal",Command.CANCEL,2);
